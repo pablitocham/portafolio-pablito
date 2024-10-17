@@ -296,12 +296,13 @@
             <div class="fila">
                 <div class="col">
                     <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
                         <input type="text" name="name" placeholder="Tu Nombre" required>
                         <input type="text" name="phone" placeholder="Cel" required>
-                        <input type="text" name="email" placeholder="E-mail" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
                         <input type="text" name="subject" placeholder="Tema" required>
                         <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        <button>
+                        <button type="submit">
                             Enviar Mensaje <i class="fa-solid fa-message"></i>
                             <span class="overlay"></span>
                         </button>
