@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JPC</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="./img/portfdolio.jpg" alt="">
+            </div>
+            <h1> Juan Pablo Chamorro</h1>
+            <h2>Desarrollador Web Front-End</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/pablitocham/?hl=es-la" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@pablitocham" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/juan-pablo-chamorro-726635312/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola Soy Juan Pablo Chamorro;</span> <br> Desarrollador Web, apasionado y creativo, por el momento
+                freelance; con ganas de seguir aprendiendo y aportar mis conocimientos.
+            </p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono</strong>
+                            +59 3412777986
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            jpablocham@gmil.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://github.com/pablitocham
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Argentina-Rosario
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Freelance
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Programar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Aprender</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Deporte</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span>Crear <br> Contenido</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Tecnologías</h3>
+                    <div class="skill">
+                        <span>Html y CSS</span>
+                        <div class="barra">
+                            <div class="progreso htmlycss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sass</span>
+                        <div class="barra">
+                            <div class="progreso sass">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React Js</span>
+                        <div class="barra">
+                            <div class="progreso react">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GitHub</span>
+                        <div class="barra">
+                            <div class="progreso github">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Skill Soft</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra">
+                            <div class="progreso comunicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra">
+                            <div class="progreso equipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Conflictos</span>
+                        <div class="barra">
+                            <div class="progreso resolucion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra">
+                            <div class="progreso liderazgo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="curriculum" class="cv">
+        <div class="contenido-seccion">
+            <h2>CV</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Coder House</h4>
+                        <span class="coder">Coder House</span>
+                        <span class="fecha">2024 2025</span>
+                        <p>Desarrollador Web Front-End; por iniciar la etapa de cursado de Back End </p>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Front-End Developer</h4>
+                        <span class="coder">Freelance</span>
+                        <span class="fecha">2024</span>
+                        <p>No cuento aún con experiencia en empresas/compañias, por el momento Freelance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://pablitocham.github.io/rick-and-morty-api/" target="_blank">
+                        <img src="./img/tegnologia.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>DESARROLLO DE API</h3>
+                            <p>RICK AND MORTY</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://pablitocham.github.io/Adivina-el-numero/" target="_blank">
+                        <img src="./img/tegnologia.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>DESARROLLO DE JUEGO</h3>
+                            <p>ADIVINA EL NÚMERO</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://pablitocham.github.io/Marvel-DC/" target="_blank">
+                        <img src="./img/tegnologia.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>DISEÑO SITIO WEB</h3>
+                            <p>MI PRIMER PROYECTO</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://pablitocham.github.io/Tienda-Marvel-DC/" target="_blank">
+                        <img src="./img/tegnologia.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>DISEÑO DE TIENDA</h3>
+                            <p>TIENDA SIMPLE</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://pablitocham.github.io/calculadora--Wednesday-/" target="_blank">
+                        <img src="./img/tegnologia.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>CALCULADORA</h3>
+                            <p>WEDNESDAY</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://pablitocham.github.io/api-tu-clima/" target="_blank">
+                        <img src="./img/tegnologia.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>DESARROLO DE API</h3>
+                            <p>API CLIMA</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="text" name="name" placeholder="Tu Nombre" required>
+                        <input type="text" name="phone" placeholder="Cel" required>
+                        <input type="text" name="email" placeholder="E-mail" required>
+                        <input type="text" name="subject" placeholder="Tema" required>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-message"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+
+                </div>
+                <div class="col">
+                    <img src="" alt="">
+                    <div class="info">
+                        <ul>
+                            <li><i class="fa-solid fa-location-pin"></i>
+                                ROSARIO-SANTA FE
+                            </li>
+                            <li><i class="fa-solid fa-phone"></i></i>
+                                +59 3412777986
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i></i>
+                                jpablocham@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#inicio" class=" arriba">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/pablitocham/?hl=es-la" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@pablitocham" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/juan-pablo-chamorro-726635312/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    </section>
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
