@@ -156,7 +156,10 @@ nav.responsive ul li a:hover {
     color: #1cb698;
     font-weight: bold;
 }
+.fa-brands{
 
+font-size: 26px;
+}
 .fila {
     display: flex;
     flex-direction: column;
@@ -701,10 +704,19 @@ footer .arriba {
 @media screen and (min-width: 600px) {
     nav {
         display: block;
+        position: static;
     }
 
     .nav-responsive {
         display: none;
+    }
+
+    nav.responsive {
+        position: static;
+        width: auto;
+        background-color: transparent;
+        top: auto;
+        right: auto;
     }
 
     .contenedor-header header ul {
@@ -714,6 +726,7 @@ footer .arriba {
 
     .contenedor-header nav ul li {
         margin-left: 10px;
+        border-bottom: none;
     }
 
     .contenedor-header ul li a {

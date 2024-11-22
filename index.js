@@ -10,6 +10,8 @@ function seleccionar() {
 
 }
 
+
+
 function efectos() {
     let skills = document.getElementById("skills")
     let recorrido = window.innerHeight - skills.getBoundingClientRect().top
