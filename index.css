@@ -250,6 +250,10 @@ font-size: 26px;
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .skills {
     background-color: #1e2326;
     color: #fff;
