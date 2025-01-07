@@ -150,16 +150,19 @@ nav.responsive ul li a:hover {
 .sobremi .contenido-seccion p {
     line-height: 22px;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .sobremi .contenido-seccion p span {
     color: #1cb698;
     font-weight: bold;
 }
-.fa-brands{
 
-font-size: 26px;
+.fa-brands {
+
+    font-size: 26px;
 }
+
 .fila {
     display: flex;
     flex-direction: column;
@@ -168,11 +171,6 @@ font-size: 26px;
 
 .col {
     padding: 5px;
-}
-
-.interes {
-    align-items: center;
-    gap: 8px;
 }
 
 .sobremi .fila .col h3 {
@@ -192,33 +190,6 @@ font-size: 26px;
     display: inline-block;
     color: #1cb698;
     width: 100px;
-}
-
-.sobremi .fila .col .contenedor-intereses {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.sobremi .fila .col .contenedor-intereses .interes {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: 0.3s;
-    background-color: rgb(38, 70, 75);
-}
-
-.sobremi .fila .col .contenedor-intereses .interes:hover {
-    background-color: aquamarine;
-}
-
-.sobremi .fila .col .contenedor-intereses .interes i {
-    font-size: 20px;
-    margin-bottom: 10px;
 }
 
 .sobremi button {
@@ -379,81 +350,6 @@ a {
     }
 }
 
-.skills .skill .comunicacion {
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-
-@keyframes comunicacion {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .equipo {
-    width: 0%;
-    animation: 2s equipo forwards;
-}
-
-@keyframes equipo {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-.skills .skill .creatividad {
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-
-@keyframes creatividad {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-.skills .skill .resolucion {
-    width: 0%;
-    animation: 2s resolucion forwards;
-}
-
-@keyframes resolucion {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-.skills .skill .liderazgo {
-    width: 0%;
-    animation: 2s liderazgo forwards;
-}
-
-@keyframes liderazgo {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
 .cv {
     background-color: #1e2326;
     color: #fff;
@@ -484,18 +380,13 @@ a {
 
 }
 
-.cv .fila .izquierda {
-    border-right: 2px solid rgb(154, 161, 173);
-}
+
 
 .cv .fila .derecha {
     border-left: 2px solid rgb(154, 161, 173);
 }
 
-.cv .fila .item {
-    background-color: rgb(87, 84, 84);
-    position: relative;
-}
+
 
 .cv .fila .item h4 {
     font-size: 18px;
@@ -504,7 +395,7 @@ a {
 
 .cv .fila .item .coder {
     color: #1cb698;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -514,15 +405,15 @@ a {
     margin-bottom: 10px;
 }
 
-.cv .fila .izq {
-    border-right: 2px solid #0dda40;
-    margin-right: 20px;
-}
-
 
 .cv .fila .der {
     border-left: 2px solid #14da0d;
     margin-left: 20px;
+}
+.exp{
+   text-align: justify;
+   line-height: 2;
+   font-size: 18px;
 }
 
 .portfolio {
