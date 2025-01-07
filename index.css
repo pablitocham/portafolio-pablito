@@ -151,6 +151,7 @@ nav.responsive ul li a:hover {
     line-height: 22px;
     margin-bottom: 20px;
     font-size: 18px;
+    line-height: 2;
 }
 
 .sobremi .contenido-seccion p span {
