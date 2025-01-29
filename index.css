@@ -238,10 +238,183 @@ a {
     padding: 15px 0;
 }
 
+.skills h3 {
+    text-align: center;
+}
+
 .skills .fila .col h3 {
     font-size: 28px;
     margin-bottom: 25px;
 }
+
+.skills .skill>span {
+    font-weight: bold;
+}
+
+.skills .skill .barra {
+    height: 8px;
+    width: 80%;
+    background-color: rgb(15, 13, 13);
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.skills .skill .progreso {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+}
+
+.skills .skill .barra span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 80%;
+    line-height: 40px;
+    top: -17px;
+    right: -17px;
+    text-align: center;
+}
+
+.skills .skill .html {
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .css {
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .sass {
+    width: 0%;
+    animation: 2s sass forwards;
+}
+
+@keyframes sass {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .react {
+    width: 0%;
+    animation: 2s react forwards;
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .boostrap {
+    width: 0%;
+    animation: 2s boostrap forwards;
+}
+
+@keyframes boostrap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .mongodb {
+    width: 0%;
+    animation: 2s mongodb forwards;
+}
+
+@keyframes mongodb {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .nodejs {
+    width: 0%;
+    animation: 2s node forwards;
+}
+
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .git {
+    width: 0%;
+    animation: 2s git forwards;
+}
+
+@keyframes git {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 
 
 .cv {
@@ -304,10 +477,11 @@ a {
     border-left: 2px solid #14da0d;
     margin-left: 20px;
 }
-.exp{
-   text-align: justify;
-   line-height: 2;
-   font-size: 18px;
+
+.exp {
+    text-align: justify;
+    line-height: 2;
+    font-size: 18px;
 }
 
 .portfolio {

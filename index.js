@@ -19,19 +19,18 @@ function efectos() {
 
         let habilidades = document.getElementsByClassName("progreso")
         for (let i = 0; i < habilidades.length; i++) {
-            habilidades[i].classList.remove("htmlycss", "sass", "javascript", "react", "github", "comunicacion", "equipo", "creatividad", "resolucion", "liderazgo")
+            habilidades[i].classList.remove("html", "css", "sass", "javascript", "react", "boostrap", "mongodb", "nodejs", "git")
         }
         setTimeout(function () {
-            habilidades[0].classList.add("htmlycss");
-            habilidades[1].classList.add("sass");
-            habilidades[2].classList.add("javascript");
-            habilidades[3].classList.add("react");
-            habilidades[4].classList.add("github");
-            habilidades[5].classList.add("comunicacion");
-            habilidades[6].classList.add("equipo");
-            habilidades[7].classList.add("creatividad");
-            habilidades[8].classList.add("resolucion");
-            habilidades[9].classList.add("liderazgo");
+            habilidades[0].classList.add("html");
+            habilidades[1].classList.add("css");
+            habilidades[2].classList.add("sass");
+            habilidades[3].classList.add("javascript");
+            habilidades[4].classList.add("react");
+            habilidades[5].classList.add("boostrap");
+            habilidades[6].classList.add("mongodb");
+            habilidades[7].classList.add("nodejs");
+            habilidades[8].classList.add("git");
         }, 60)
     }
 }
