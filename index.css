@@ -71,7 +71,7 @@ nav.responsive ul li a:hover {
 }
 
 .contenedor-header header .logo a {
-    font-size: 24px;
+    font-size: 3px;
     color: blue;
     text-decoration: none;
 }
@@ -85,6 +85,7 @@ nav.responsive ul li a:hover {
     color: #fff;
     background-size: cover;
 }
+
 
 .inicio .contenedor-banner img {
     display: block;
@@ -113,14 +114,13 @@ nav.responsive ul li a:hover {
 }
 
 .inicio .contenedor-banner h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
 }
 
 .inicio .contenedor-banner .redes a {
     color: #fff;
     text-decoration: none;
-    border: 2px solid red;
     border-radius: 45%;
     width: 42px;
     height: 42px;
@@ -147,44 +147,62 @@ nav.responsive ul li a:hover {
 
 }
 
-.sobremi .contenido-seccion p {
-    line-height: 22px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 2;
+.sobremi .contenido-seccion {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.sobremi .contenido-seccion p span {
-    color: #1cb698;
-    font-weight: bold;
+.sobremi .contenido-seccion p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 15px 20px 15px;
+    text-align: justify;
+
 }
 
 .fa-brands {
-
     font-size: 26px;
+    color: #1cb698;
 }
 
 .fila {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
 }
 
 .col {
+    width: 100%;
     padding: 5px;
 }
 
-.sobremi .fila .col h3 {
-    font-size: 20px;
-    margin-bottom: 25px;
+.col-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.sobremi .col-datos h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 .sobremi .fila .col ul {
     list-style: none;
+    padding: 0;
 }
 
-.sobremi .fila .col ul li {
-    margin: 12px 0;
+.sobremi .col-datos ul li {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
 }
 
 .sobremi .fila .col ul li strong {
@@ -214,8 +232,8 @@ nav.responsive ul li a:hover {
     width: 0%;
     height: 100%;
     background-color: #1cb698;
-    z-index: -1s;
-    transition: 1s;
+    z-index: -1;
+    transition: 0.5s ease-in-out
 }
 
 .sobremi button:hover .overlay {
@@ -230,192 +248,49 @@ a {
     background-color: #1e2326;
     color: #fff;
     padding: 30px 20px;
+    text-align: center;
 }
 
 .skills h2 {
     font-size: 40px;
-    text-align: center;
     padding: 15px 0;
 }
 
 .skills h3 {
-    text-align: center;
-}
-
-.skills .fila .col h3 {
     font-size: 28px;
     margin-bottom: 25px;
 }
 
-.skills .skill>span {
+.contenedor-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill img:hover {
+    transform: scale(1.9);
+}
+
+.skill span {
+    font-size: 16px;
     font-weight: bold;
 }
-
-.skills .skill .barra {
-    height: 8px;
-    width: 80%;
-    background-color: rgb(15, 13, 13);
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.skills .skill .progreso {
-    background-color: blue;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-    width: 100%;
-}
-
-.skills .skill .barra span {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1cb698;
-    border-radius: 80%;
-    line-height: 40px;
-    top: -17px;
-    right: -17px;
-    text-align: center;
-}
-
-.skills .skill .html {
-    width: 0%;
-    animation: 2s html forwards;
-}
-
-@keyframes html {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .css {
-    width: 0%;
-    animation: 2s css forwards;
-}
-
-@keyframes css {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .sass {
-    width: 0%;
-    animation: 2s sass forwards;
-}
-
-@keyframes sass {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .javascript {
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-
-@keyframes javascript {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .react {
-    width: 0%;
-    animation: 2s react forwards;
-}
-
-@keyframes react {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .boostrap {
-    width: 0%;
-    animation: 2s boostrap forwards;
-}
-
-@keyframes boostrap {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .mongodb {
-    width: 0%;
-    animation: 2s mongodb forwards;
-}
-
-@keyframes mongodb {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .nodejs {
-    width: 0%;
-    animation: 2s node forwards;
-}
-
-@keyframes node {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skills .skill .git {
-    width: 0%;
-    animation: 2s git forwards;
-}
-
-@keyframes git {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-
 
 .cv {
     background-color: #1e2326;
@@ -424,64 +299,51 @@ a {
 }
 
 .cv h2 {
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     padding: 15px 0;
 }
 
-.cv .fila {
+.cv .experiencia {
     display: flex;
     flex-direction: column;
-
+    gap: 30px;
 }
 
-.cv .fila .col {
-    width: 100%;
-    padding: 0 10px;
-
+.cv .experiencia h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.cv .fila .col h3 {
-    font-size: 28px;
-    margin-bottom: 25px;
-
+.cv .item {
+    border-left: 2px solid #1cb698;
+    padding-left: 15px;
 }
 
-
-
-.cv .fila .derecha {
-    border-left: 2px solid rgb(154, 161, 173);
-}
-
-
-
-.cv .fila .item h4 {
+.cv .item h4 {
     font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.cv .fila .item .coder {
-    color: #1cb698;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.cv .fila .item .fecha {
-    display: block;
-    color: red;
     margin-bottom: 10px;
 }
 
+.cv .coder {
+    color: #1cb698;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
 
-.cv .fila .der {
-    border-left: 2px solid #14da0d;
-    margin-left: 20px;
+.cv .fecha {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .exp {
     text-align: justify;
-    line-height: 2;
-    font-size: 18px;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 .portfolio {
@@ -544,47 +406,59 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 20px;
+}
 
+.contacto {
+    background-image: url(img/progr.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
 }
 
 .contacto h2 {
-    font-size: 40px;
-    padding: 48px 0;
+    font-size: 32px;
+    padding: 32px 0;
     text-align: center;
 }
 
-.contacto .col {
-    position: relative;
-    padding: 30px;
-    width: 100%;
+.fila {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.contacto .col input,
-.contacto .col textarea {
+.col {
     width: 100%;
-    padding: 18px;
+    padding: 10px;
+}
+
+.col input,
+.col textarea {
+    width: 100%;
+    padding: 14px;
     border: none;
     margin-bottom: 15px;
     background-color: #030303;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.contacto button {
-    cursor: pointer;
+button {
     width: 100%;
     background-color: transparent;
     border: 3px solid #fff;
-    margin: 20px auto;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 16px;
     color: whitesmoke;
-    text-align: center;
+    cursor: pointer;
     position: relative;
     z-index: 10;
 }
 
-.contacto button .overlay {
+button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -592,34 +466,32 @@ a {
     height: 100%;
     background-color: #0dda40;
     z-index: -1;
-    transition: width 0.3s;
+    transition: width 0.3s ease;
 }
 
-.contacto button:hover .overlay {
+button:hover .overlay {
     width: 100%;
-    z-index: 0;
-
 }
 
-.contacto .col .info {
-    padding: 20px;
-    width: 100%;
-
-}
-
-.contacto .col .info ul {
+.info ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     background-color: #030303;
+    border-radius: 8px;
+    padding: 10px;
 }
 
-.contacto .col .info ul li {
-    margin-bottom: 20px;
+.info ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
 }
 
-.contacto .col .info ul li i {
-    color: blue;
-    display: inline-block;
-    margin-right: 20px;
+.info ul li i {
+    color: #0dda40;
+    margin-right: 10px;
 }
 
 footer {
@@ -639,7 +511,6 @@ footer .redes a {
     color: #fff;
     display: inline block;
     text-decoration: none;
-    border: 1px solid red;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -701,103 +572,130 @@ footer .arriba {
         color: rgb(18, 201, 33);
     }
 
-    .sobremi .fila {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
+    .sobremi .contenido-seccion p {
+        font-size: 17px;
+        margin: 0 auto 25px auto;
+        max-width: 90%;
     }
 
-    .sobremi .col {
-        width: 50%;
-        gap: 20px;
+    .sobremi .col-datos ul li {
+        font-size: 17px;
     }
 
-    .sobremi .fila {
-        margin-top: 40px;
-    }
-
-    .skills .fila {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .skills .col {
-        width: 100%;
-        gap: 20px;
-    }
-
-    .skills .fila {
-        margin-top: 40px;
-    }
-
-    .skills .fila {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .cv .fila {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
-        margin-top: 40px;
-    }
-
-    .cv .fila .item {
-        padding: 25px;
-        margin-bottom: 30px;
-        background-color: rgb(87, 84, 84);
-        position: relative;
-        line-height: 24px;
-    }
-
-    .cv .fila .item h4 {
+    .sobremi .col-datos h3 {
         font-size: 24px;
-        margin-bottom: 15px;
     }
 
-    .portfolio .galeria {
-        display: grid;
+    .contenedor-skills {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 
-    .contacto .col input,
-    .contacto .col textarea {
-        display: block;
-        width: 60%;
-        padding: 18px;
-        border: none;
-        margin-bottom: 20px;
-        background-color: #030303;
-        color: #fff;
-        font-size: 24px;
+    .skill img {
+        width: 70px;
+        height: 70px;
     }
 
-    .contacto button {
-        cursor: pointer;
-        background-color: transparent;
-        border: 2px solid #fff;
-        width: fit-content;
-        margin: 20px auto;
-        padding: 10px 22px;
-        font-size: 16px;
-        color: #fff;
-        position: relative;
-        z-index: 10;
+    .skill span {
+        font-size: 17px;
     }
+}
 
-    .contacto .col .info {
-        top: 30%;
-        padding: 20px;
-        width: fit-content;
-        left: 50%;
-        transform: translate (-50% -50%);
-    }
+.cv h2 {
+    font-size: 36px;
+}
+
+.cv .experiencia h3 {
+    font-size: 26px;
+}
+
+.exp {
+    font-size: 17px;
+}
+
+.cv .item {
+    padding-left: 20px;
+}
+
+.portfolio .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fila {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacto {
+    padding: 40px 30px;
+}
+
+.contacto h2 {
+    font-size: 40px;
+    padding: 36px 0 50px 0;
+}
+
+.fila {
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.col {
+    padding: 15px;
+}
+
+
+.col.form {
+    background-color: rgba(3, 3, 3, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.col input,
+.col textarea {
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+button {
+    width: 60%;
+    margin: 15px auto 0 auto;
+    display: block;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.col.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info ul {
+    background-color: rgba(3, 3, 3, 0.7);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.info ul li {
+    margin-bottom: 18px;
+    justify-content: center;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.info ul li i {
+    margin-right: 12px;
+    font-size: 18px;
+    width: 22px;
+    text-align: center;
 }
 
 @media screen and (min-width:1024px) {
@@ -829,4 +727,135 @@ footer .arriba {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .sobremi .contenido-seccion p {
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: rig;
+        color: #f1f1f1;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-skills {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
+
+    .skill img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill span {
+        font-size: 20px;
+    }
+
+    .fila {
+        gap: 40px;
+    }
+
+    .contacto h2 {
+        font-size: 2.5rem;
+    }
+
+    .contacto {
+        padding: 60px 40px;
+    }
+
+    .contacto h2 {
+        font-size: 48px;
+        padding: 40px 0 60px 0;
+    }
+
+
+    .fila {
+        flex-direction: row;
+        gap: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .col {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .col.form {
+        background-color: rgba(3, 3, 3, 0.8);
+        border-radius: 12px;
+        padding: 40px;
+    }
+
+    .col input,
+    .col textarea {
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .col input:focus,
+    .col textarea:focus {
+        outline: none;
+        border: 2px solid #0dda40;
+        background-color: #111;
+    }
+
+    button {
+        width: auto;
+        min-width: 200px;
+        max-width: 300px;
+        margin: 20px auto 0 auto;
+        display: block;
+        padding: 15px 30px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .col.info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 500px;
+    }
+
+    .info ul {
+        background-color: rgba(3, 3, 3, 0.8);
+        border-radius: 12px;
+        padding: 30px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info ul li {
+        margin-bottom: 20px;
+        justify-content: center;
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .info ul li:hover {
+        background-color: rgba(13, 218, 64, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .info ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .info ul li i {
+        margin-right: 15px;
+        font-size: 20px;
+        width: 25px;
+        text-align: center;
+    }
 }
