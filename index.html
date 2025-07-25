@@ -5,147 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="./index.css">
-    <title>Portafolio</title>
+    <title>Juan Pablo Chamorro - Desarrollador Full Stack</title>
 </head>
 
 <body>
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">JPC</a>
+                <a href="#inicio">Juan Pablo Chamorro</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#portfolio">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultar()">
+            <button class="nav-responsive" id="menu-toggle" aria-label="Abrir menú de navegación">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </button>
         </header>
     </div>
     <section id="inicio" class="inicio">
         <div class="contenedor-banner">
-            <div class="contenedor-img">
-                <img src="./img/portfdolio.jpg" alt="">
+            <div class="contenedor-img" data-aos="fade-right">
+                <img src="./img/portfdolio.jpg" alt="Foto de perfil de Juan Pablo Chamorro">
             </div>
-            <h1> Juan Pablo Chamorro</h1>
-            <h2>Desarrollador Web Full Stack</h2>
-            <div class="redes">
+            <h1 data-aos="flip-left" data-aos-delay="100"> Juan Pablo Chamorro</h1>
+            <h2 data-aos="fade-left" data-aos-delay="200">Desarrollador Web Full Stack</h2>
+
+            <div class="redes" data-aos="fade-up" data-aos-delay="300">
                 <a href="https://www.linkedin.com/in/juan-pablo-chamorro-726635312/" target="_blank"><i
                         class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/pablitocham" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/5493412777986?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios."
+                    target="_blank" title=" WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </section>
+
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
             <p>
-                Soy Desarrollador Web Full Stack 
+                Soy Desarrollador Web Full Stack
                 con una sólida formación en tecnologías modernas como HTML, CSS, JavaScript, React, Node.js, MongoDB.
                 Aunque aún no cuento con experiencia profesional en el área, he desarrollado diversos proyectos durante
                 mi formación que me permitieron afianzar mis conocimientos y enfrentar desafíos reales en el desarrollo
                 web.
-                Vengo de mundo de los Recursos Humanos, área en la que me desempeño actualmente
+            </p>
+
+            <p>
+                Vengo del mundo de los Recursos Humanos, área en la que me desempeño actualmente
                 en la Universidad Nacional de Rosario. Esta experiencia me brindó herramientas valiosas como el trabajo
                 en equipo, la comunicación efectiva y la mejora continua, habilidades que hoy aplico en el ámbito del
                 desarrollo.
+
+            </p>
+            <p>
                 Me apasiona la tecnología. Estoy en constante aprendizaje, buscando siempre nuevos desafíos que me
                 permitan crecer tanto personal como profesionalmente.
-                <br>Estoy abierto a nuevas oportunidades laborales y proyectos que me permitan seguir desarrollando mis
+                Estoy abierto a nuevas oportunidades laborales y proyectos que me permitan seguir desarrollando mis
                 habilidades y aportar valor a proyectos reales.
             </p>
-            <div class="fila">
-                <div class="col col-datos">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cel</strong>
-                            +54 9 3412777986
-                        </li>
-                        <li>
-                            <strong>E-mail</strong>
-                            jpablocham@gmil.com
-                        </li>
-                        <li>
-                            <strong>Website</strong>
-                            <a href="https://github.com/pablitocham" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            Argentina-Rosario
-                        </li>
-                    </ul>
-                </div>
+
+            <div class="contacto-info">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Teléfono</strong>
+                        +54 9 341-2777986
+                    </li>
+                    <li>
+                        <strong>E-mail</strong>
+                        juanpablochamorro.dev@gmail.com
+                    </li>
+                    <li>
+                        <strong>GitHub</strong>
+                        <a href="https://github.com/pablitocham" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                        <strong>Ubicación</strong>
+                        <span>Rosario, Santa Fe, Argentina</span>
+                    </li>
+                </ul>
             </div>
-            <a id=" dowloadCv" href="./cv/Juan_Pablo_Chamorro_CV.pdf" download="Juan_Pablo_Chamorro_CV.pdf">
-                <button>
-                    Descargar CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </button>
-            </a>
+            <div class="btn-container">
+                <a id=" dowloadCv" href="./cv/Juan_Pablo_Chamorro_CV.pdf" download="Juan_Pablo_Chamorro_CV.pdf">
+                    <button>
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </a>
+            </div>
         </div>
     </section>
+
     <section id="skills" class="skills">
-        <div class="contenido-seccion">
+        <div class="skills-container">
             <h2>Skills</h2>
-            <div class="fila">
-                <div class="col">
-                    <h3>Tecnologías</h3>
-                    <div class="contenedor-skills">
-                        <div class="skill">
-                            <img src="img/html.png" alt="HTML" />
-                            <span>HTML</span>
-                        </div>
-                        <div class="skill">
-                            <img src="img/ccs.png" alt="CSS" />
-                            <span>CSS</span>
-                        </div>
-                        <div class="skill">
-                            <img src="img/sass.png" alt="Sass" />
-                            <span>Sass</span>
-                        </div>
-                        <div class="skill">
-                            <img src="img/js.png" alt="JavaScript" />
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill">
-                            <img src="img/react.png" alt="React" />
-                            <span>React</span>
-                        </div>
-                        <div class="skill">
-                            <img src="img/mdb.png" alt="MongoDB" />
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill">
-                            <img src="img/node.png" alt="Node.js" />
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill">
-                            <img src="img/git.png" alt="Git" />
-                            <span>Git</span>
-                        </div>
+            <div class="skills-categoria">
+                <h3>Tecnologías</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="img/html.png" alt="HTML" />
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/ccs.png" alt="CSS" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/sass.png" alt="Sass" />
+                        <span>Sass</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/js.png" alt="JavaScript" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/react.png" alt="React" />
+                        <span>React</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/mdb.png" alt="MongoDB" />
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/node.png" alt="Node.js" />
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/git.png" alt="Git" />
+                        <span>Git</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="curriculum" class="cv">
-        <div class="contenido-seccion">
+        <div class="cv-contenido">
             <h2>CV</h2>
             <div class="experiencia">
                 <h3>Experiencia</h3>
                 <div class="item">
-                    <h4>Front-End Developer</h4>
-                    <span class="coder">Freelance / Proyectos personales</span>
+                    <div class="item-content">
+                        <h4>Front-End Developer</h4>
+                        <span class="coder">Freelance / Proyectos personales</span>
+                    </div>
                     <span class="fecha">2024</span>
                     <p class="exp">
                         Desarrollo de sitios web interactivos y responsivos como parte de mi formación práctica y
@@ -157,8 +174,10 @@
                     </p>
                 </div>
                 <div class="item">
-                    <h4>Responsable de Recursos Humanos</h4>
-                    <span class="coder">Universidad Nacional de Rosario</span>
+                    <div class="item-content">
+                        <h4>Responsable de Recursos Humanos</h4>
+                        <span class="coder">Universidad Nacional de Rosario</span>
+                    </div>
                     <span class="fecha">Actualidad</span>
                     <p class="exp">
                         Gestión integral del área de Recursos Humanos, incluyendo procesos de selección, capacitación,
@@ -170,33 +189,34 @@
             </div>
         </div>
     </section>
+
     <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
+        <div class="portfolio-contenidos">
             <h2>PROYECTOS</h2>
             <div class="galeria">
-                
+
                 <div class="proyecto">
                     <a href="https://pablitocham.github.io/Adivina-el-numero/" target="_blank">
-                        <img src="./img/tegnologia.jpeg" alt="">
-                        <div class="overlay">
+                        <img src="./img/adivina.png " alt="Juego de Adivina el número">
+                        <div class="overlays">
                             <h3>DESARROLLO DE JUEGO</h3>
                             <p>ADIVINA EL NÚMERO</p>
                         </div>
                     </a>
                 </div>
                 <div class="proyecto">
-                    <a href="https://pablitocham.github.io/Tienda-Marvel-DC/" target="_blank">
-                        <img src="./img/tegnologia.jpeg" alt="">
-                        <div class="overlay">
-                            <h3>DISEÑO DE TIENDA</h3>
-                            <p>TIENDA SIMPLE</p>
+                    <a href="https://eyestecno.netlify.app/" target="_blank">
+                        <img src="./img/landing.png" alt="Tienda de tecnología">
+                        <div class="overlays">
+                            <h3>LANDING PAGE</h3>
+                            <p>EYES TECNO</p>
                         </div>
                     </a>
                 </div>
                 <div class="proyecto">
                     <a href="https://pablitocham.github.io/calculadora--Wednesday-/" target="_blank">
-                        <img src="./img/tegnologia.jpeg" alt="">
-                        <div class="overlay">
+                        <img src="./img/merlina.png" alt="Calculadora de Merlina Addams">
+                        <div class="overlays">
                             <h3>CALCULADORA</h3>
                             <p>WEDNESDAY</p>
                         </div>
@@ -204,8 +224,8 @@
                 </div>
                 <div class="proyecto">
                     <a href="https://pablitocham.github.io/api-tu-clima/" target="_blank">
-                        <img src="./img/tegnologia.jpeg" alt="">
-                        <div class="overlay">
+                        <img src="./img/clima.png" alt="Buscador de clima">
+                        <div class="overlays">
                             <h3>DESARROLO DE API</h3>
                             <p>API CLIMA</p>
                         </div>
@@ -213,8 +233,8 @@
                 </div>
                 <div class="proyecto">
                     <a href="https://funkomarveldc-react.vercel.app/" target="_blank">
-                        <img src="./img/tegnologia.jpeg" alt="">
-                        <div class="overlay">
+                        <img src="./img/funkos-marvel-dc.png" alt="Tienda de Funkos Marvel y DC">
+                        <div class="overlays">
                             <h3>DESARROLLO CON REACT</h3>
                             <p>TIENDA DE FUNKOS</p>
                         </div>
@@ -222,8 +242,8 @@
                 </div>
                 <div class="proyecto">
                     <a href="https://pablitocham.github.io/lista-de-tareas/" target="_blank">
-                        <img src="./img/tegnologia.jpeg" alt="">
-                        <div class="overlay">
+                        <img src="./img/lista.png" alt="Lista de tareas sencilla y eficaz">
+                        <div class="overlays">
                             <h3>DESARROLLO DE APLICACIÓN</h3>
                             <p>LISTA DE TAREAS</p>
                         </div>
@@ -232,30 +252,36 @@
             </div>
         </div>
     </section>
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
+
+    <section id="contacto" class="contactar">
+        <div class="contactame-informacion">
             <h2>CONTACTO</h2>
-            <div class="fila">
-                <div class="col form">
-                    <form name="contact" method="POST" data-netlify="true">
+            <div class="contactos-containers">
+                <div class="form">
+                    <form name="contact" method="POST" data-netlify="true" action="./gracias.html">
                         <input type="hidden" name="form-name" value="contact">
                         <input type="text" name="name" placeholder="Tu Nombre" required>
                         <input type="text" name="phone" placeholder="Cel" required>
                         <input type="email" name="email" placeholder="E-mail" required>
                         <input type="text" name="subject" placeholder="Tema" required>
                         <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        <button type="submit">
-                            Enviar Mensaje <i class="fa-solid fa-message"></i>
-                            <span class="overlay"></span>
+                        <button type="submit" class="btn-enviar">
+                            <span> Enviar Mensaje </span>
+                            <i class="fa-solid fa-message"></i>
                         </button>
                     </form>
                 </div>
-                <div class="col info">
+                <div class="contactame-informacion contacto-datos">
                     <ul>
+                        <li><i class="fa-solid fa-phone"></i> + 54 9 341-2777986</li>
+                        <li><i class="fa-solid fa-envelope"></i> juanpablochamorro.dev@gmail.com</li>
                         <li><i class="fa-solid fa-location-pin"></i> ROSARIO-SANTA FE</li>
-                        <li><i class="fa-solid fa-phone"></i>  + 54 9 341-152777986</li>
-                        <li><i class="fa-solid fa-envelope"></i> jpablocham@gmail.com</li>
                     </ul>
+                    <a href="https://wa.me/5493412777986?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios."
+                        class="whatsapp-btn" target="_blank" title=" WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Contactar por WhatsApp</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -264,12 +290,31 @@
         <a href="#inicio" class=" arriba">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Juan Pablo Chamorro</h3>
+                <p>Desarrollador Full Stack</p>
+                <p>Rosario, Santa Fe, Argentina</p>
+            </div>
+        </div>
         <div class="redes">
-            <a href="https://www.linkedin.com/in/juan-pablo-chamorro-726635312/" target="_blank"><i
-                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/juan-pablo-chamorro-726635312/" target="_blank" title="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5493412777986?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios."
+                target="_blank" title=" WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:juanpablochamorro.dev@gmail.com" target="_blank" title=" E-mail">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Juan Pablo Chamorro. Todos los derechos reservados</p>
         </div>
     </footer>
-    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./index.js" defer></script>
 </body>
 
