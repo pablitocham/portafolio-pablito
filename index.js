@@ -54,33 +54,6 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(section => sectionObserver.observe(section))
 
-const themeToggle = document.getElementById('theme-toggle')
-const themeIcon = document.getElementById('theme-icon')
-const htmlEl = document.documentElement;
-
-function initTheme() {
-    const saved = localStorage.getItem('theme') || 'dark'
-    htmlEl.setAttribute('data-theme', saved)
-    updateIcon(saved)
-}
-
-function updateIcon(theme) {
-    if (!themeIcon) return
-    themeIcon.className = theme === 'dark'
-        ? 'fa-solid fa-moon'
-        : 'fa-solid fa-sun'
-}
-
-function toggleTheme() {
-    const current = htmlEl.getAttribute('data-theme')
-    const next = current === 'dark' ? 'light' : 'dark'
-    htmlEl.setAttribute('data-theme', next)
-    localStorage.setItem('theme', next)
-    updateIcon(next)
-}
-
-initTheme()
-themeToggle && themeToggle.addEventListener('click', toggleTheme)
 
 const typedEl = document.getElementById('typed-text')
 
@@ -137,16 +110,14 @@ if (canvas && ctx) {
     canvas.width = W
     canvas.height = H
 
-    window.addEventListener('resize', () => {
-        W = window.innerWidth
-        H = window.innerHeight
-        canvas.width = W
-        canvas.height = H
-    })
 
-    const PARTICLE_COUNT = 300
     const MAX_DIST = 150
     const particles = []
+    function getParticleCount() {
+        if (window.innerWidth < 768) return 120
+        if (window.innerWidth < 1024) return 200
+        return 300
+    }
 
     class Particle {
         constructor() {
@@ -180,9 +151,15 @@ if (canvas && ctx) {
             ctx.globalAlpha = 1
         }
     }
-    for (let i = 0; i < PARTICLE_COUNT; i++) {
-        particles.push(new Particle())
+
+    function createParticles() {
+        particles.length = 0
+        const count = getParticleCount()
+        for (let i = 0; i < count; i++) {
+            particles.push(new Particle())
+        }
     }
+    createParticles()
 
     function drawConnections() {
         for (let i = 0; i < particles.length; i++) {
@@ -214,6 +191,19 @@ if (canvas && ctx) {
         requestAnimationFrame(animateParticles)
     }
     animateParticles()
+    let resizeTimeout
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout)
+        resizeTimeout = setTimeout(() => {
+
+            W = window.innerWidth
+            H = window.innerHeight
+            canvas.width = W
+            canvas.height = H
+            createParticles()
+        }, 200)
+    })
+
 }
 
 const revealSelectors = [
