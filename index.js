@@ -130,7 +130,7 @@ if (canvas && ctx) {
             this.size = Math.random() * 2.2 + 0.6
             this.speedX = (Math.random() - 0.5) * 0.28
             this.speedY = (Math.random() - 0.5) * 0.28
-            this.opacity = Math.random() * 0.6 + 0.2
+            this.opacity = Math.random() * 0.4 + 0.6
             this.color = Math.random() > 0.55 ? '#1cb698' : '#0dda40'
         }
 
